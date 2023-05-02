@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <header>
+        <a href="#" ><img src="png" class="logo" alt="" width="100"></a>
+
+        <div class="fa-sharp fa-solid fa-bars" id="menu-icon"></div>
+ 
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="social">
+            <a href="https://github.com/cypher0137"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.linkedin.com/in/cypher137"><i class="fa-brands fa-linkedin"></i></a>
+            
+        
+        </div>
+        <div class="home-img">
+            <img src="main.jpeg" alt="">
+        </div>
+        <div class="home-text">
+            <span>Hello, I'm</span>
+            <h1>Akhilesh Singh</h1>
+            <h2>Web Developer | ML | Blockchain</h2>
+            <p><br>Code is nothing but the basic unit of technology.</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+ 
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+            <span>Introduction</span>
+        </div>
+
+        <div class="about-container">
+            <div class="about-img">
+                <img src="secondary.jpeg" alt="">
+            </div>
+            <div class="about-text">
+                <p>Hello! My name is Akhilesh Singh and i enjoy to create <br>thing live on the
+                    internet. My interst in web Devlopment,Machine Learning and Blockchain<br>
+                </p>
+                <div class="information">
+                   
+                    <div class="info-box">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Akhilesh Singh</span>
+                    </div>
+                    
+                    <div class="info-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 8572902125</span>
+                    </div>
+                    
+                    <div class="info-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Akhilesh8572@gmail.com</span>
+                    </div>
+                </div>
+                <a href="https://drive.google.com/file/d/1klrShMYdv6qa5BiRgEHocvvJnEbQFo8C/view?usp=share_link" class="btn">Download Cv</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+            <span>My Skills</span>
+        </div>
+        
+        <div class="skills-container">
+            <div class="bars">
+                
+                <div class="bars-box">
+                    <h3>JAVA</h3>
+                    <span>8 0%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar java-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>HTML</h3>
+                    <span>90%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+                
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span>70%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+              
+                <div class="bars-box">
+                    <h3>JavaScript</h3>
+                    <span>70%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                
+                <div class="bars-box">
+                    <h3>Python</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar python-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>Machine Learning</h3>
+                    <span>65%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar ml-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>Blockchain & Solidity</h3>
+                    <span>60%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar bs-bar"></div>
+                </div>
+            </div>
+            <div class="skills-img">
+                <img src="s1.png" alt="">
+            </div>
+        </div>
+ 
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <span>Connect Me</span>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Your Name">
+                <input type="email" name="" id="" placeholder="Your Email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+                <input type="button" value="Send" class="contact-button">
+            </form>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>Create By <a href="">Akhilesh Singh</a> | All Right Reserved.</p>
+    </div>
+ 
+
+</body>
+
+<script>
+    let header = document.querySelector('header');
+    let menu = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+     
+     
+    window.addEventListener('scroll', () => {
+        header.classList.toggle('shadow', window.scrollY > 0);
+    });
+     
+    menu.onclick = () => {
+        navbar.classList.toggle('active');
+    }
+    window.onscroll = () => {
+        navbar.classList.remove('active');
+    }
+</script>
+</html>
